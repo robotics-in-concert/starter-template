@@ -1,0 +1,2 @@
+- resource_name: concert_service_admin/admin
+- resource_name: concert_service_teleop/teleop
