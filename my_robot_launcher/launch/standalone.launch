@@ -22,7 +22,7 @@
 
   <!-- a list of catkin packages that provide rapps to be loaded by the app manager. -->
   <!-- <arg name="rapp_package_whitelist"    default="[rocon_apps, YOUR_RAPP_PACKAGE]"/> -->
-  <arg name="rapp_package_whitelist"    default="[rocon_apps, my_robot_launcher]"/>
+  <arg name="rapp_package_whitelist"    default="[rocon_apps, my_rapps]"/>
   <arg name="rapp_package_blacklist"    default="[]"/>
 
   <!-- Interactions --> 

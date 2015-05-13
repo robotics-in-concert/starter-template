@@ -1,2 +1,8 @@
 <launch>
+  <node pkg="my_rapps" name="my_teleop" type="dummy_video_teleop.py">
+
+    <!-- Apply remapping rules to map with public interface descrbied in parent rapp(rocon_apps/teleop) -->
+    <remap from="cmd_vel" to="/teleop/cmd_vel"/>
+    <remap from="compressed_image"   to="/teleop/compressed_image"/>
+  </node>
 </launch>

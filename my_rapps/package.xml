@@ -34,6 +34,8 @@
   <run_depend>rocon_apps</run_depend>
   <run_depend>geometry_msgs</run_depend>
   <run_depend>sensor_msgs</run_depend>
+  <run_depend>cv_bridge</run_depend>
+
 
   <export>
     <rocon_app>rapps/dummy_video_teleop/dummy_video_teleop.rapp</rocon_app>
