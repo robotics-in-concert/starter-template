@@ -29,7 +29,7 @@
   <arg name="interactions"      default="true"/>
   <!-- a list of filenames that provide interactions specifications. -->
   <!-- <arg name="interactions_list" default="[YOUR_INTERACTIONS_LIST]"/> -->
-  <arg name="interactions_list" default="[my_robot_launcher/my.interactions]"/> 
+  <arg name="interactions_list" default="[my_robot_launcher/admin.interactions, teleop.interactions]"/> 
 
   <!-- Capabilities(Disabled) -->
   <!-- Zeroconf -->

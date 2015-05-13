@@ -33,6 +33,6 @@
   <run_depend>rocon_apps</run_depend>
 
   <export>
-    <!--  <rocon_app>-->
+    <rocon_app>rapps/dummy_video_teleop/dummy_video_teleop.rapp</rocon_app>
   </export>
 </package>

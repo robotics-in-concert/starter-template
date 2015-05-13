@@ -1,0 +1,6 @@
+display:          Dummy Video Teleop
+description:      Dummy video teleoperation rapp for demonstrate rapp start
+compatibility:    rocon:/robot_other
+launch:           dummy_video_teleop.launch
+icon:             teleop_bubble_icon.png
+parent_name:      rocon_apps/video_teleop
