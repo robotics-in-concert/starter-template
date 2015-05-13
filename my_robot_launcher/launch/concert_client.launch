@@ -16,6 +16,7 @@
   <!-- Rocon Master Info -->
   <!--e.g) turtlebot_bringup/turtlebot2.png" -->
   <!--<arg name="robot_icon"    default="<PKG_NAME>/<ICON_FILE>"/> -->
+  <arg name="robot_icon"    default="rocon_icons/rocon.png"/>
 
   <!-- Describe your robot -->
   <arg name="robot_description"         default="This is my awesome robot"/>
