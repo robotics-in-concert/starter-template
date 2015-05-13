@@ -1,0 +1,55 @@
+<launch>
+  <!-- Robot bringup -->
+    <!-- Add your robot bringup -->
+    <!-- <include YOUR_ROBOT LAUNCHER />-->
+
+  <!-- Rapp Manager -->  
+  <!-- used as a unique identifier -->
+  <arg name="robot_name"    default="AwesomeBot"/>
+
+  <!-- just in case you are considering a 'variant' and want to make use of this. -->
+  <!-- TODO: Link how to add robot type tutorial -->
+  <!--<arg name="robot_type"    default="YOUR_ROBOT_TYPE"/>-->
+  <arg name="robot_type"    default="robot_other"/>
+
+  <!-- Rocon Master Info -->
+  <!--e.g) turtlebot_bringup/turtlebot2.png" -->
+  <!--<arg name="robot_icon"    default="<PKG_NAME>/<ICON_FILE>"/> -->
+  
+  <!-- Describe your robot -->
+  <arg name="robot_description"         default="This is my awesome robot"/>
+
+  <!-- a list of catkin packages that provide rapps to be loaded by the app manager. -->
+  <!-- <arg name="rapp_package_whitelist"    default="[rocon_apps, YOUR_RAPP_PACKAGE]"/> -->
+  <arg name="rapp_package_whitelist"    default="[rocon_apps, my_robot_launcher]"/>
+  <arg name="rapp_package_blacklist"    default="[]"/>
+
+  <!-- Interactions --> 
+  <!-- start an interactions manager -->
+  <arg name="interactions"      default="true"/>
+  <!-- a list of filenames that provide interactions specifications. -->
+  <!-- <arg name="interactions_list" default="[YOUR_INTERACTIONS_LIST]"/> -->
+  <arg name="interactions_list" default="[my_robot_launcher/my.interactions]"/> 
+
+  <!-- Capabilities(Disabled) -->
+  <!-- Zeroconf -->
+  <arg name="zeroconf"          default="true"/>
+
+  <!-- Rapp Manager -->
+  <include file="$(find rocon_app_manager)/launch/standalone.launch">
+    <!-- Rapp Manager --> 
+    <arg name="robot_name"                    value="$(arg robot_name)" />
+    <arg name="robot_type"                    value="$(arg robot_type)" />
+    <arg name="robot_icon"                    value="$(arg robot_icon)" />
+    <arg name="robot_description"             value="$(arg robot_description)" />
+    <arg name="rapp_package_whitelist"        value="$(arg rapp_package_whitelist)" />
+    <arg name="rapp_package_blacklist"        value="$(arg rapp_package_blacklist)" />
+
+    <!-- Interactions --> 
+    <arg name="interactions"                  value="$(arg interactions)"/>
+    <arg name="interactions_list"             value="$(arg interactions_list)"/>
+
+    <!-- Zeroconf -->
+    <arg name="zeroconf"                      value="$(arg zeroconf)"/>
+  </include>
+</launch>

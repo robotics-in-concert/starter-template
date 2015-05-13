@@ -1,15 +1,12 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(my_first_concert)
-
+project(my_robot_launcher)
 
 ####################################################
 # Catkin
 ####################################################
-
 find_package(catkin REQUIRED COMPONENTS
-  concert_master
-  concert_service_admin
-  concert_service_teleop
+  rocon_app_manager
+  rocon_apps
 )
 
 catkin_package()
@@ -18,6 +15,6 @@ catkin_package()
 # Installs
 ####################################################
 
-#install(DIRECTORY solutions
+#install(DIRECTORY launch 
 #  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 #)
