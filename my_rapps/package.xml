@@ -38,6 +38,7 @@
 
 
   <export>
+    <!-- rapp need to be exported to be visible to rapp manager -->
     <rocon_app>rapps/dummy_video_teleop/dummy_video_teleop.rapp</rocon_app>
   </export>
 </package>
